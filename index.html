@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OMTEAM博客</title>
+    <style>
+        body,
+        html,
+        div,
+        p,
+        ul,
+        li,
+        a,
+        img,
+        section {
+            padding: 0;
+            margin: 0;
+        }
+
+        * {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+            outline: none;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 320px) {
+            html {
+                font-size: 13px !important
+            }
+        }
+
+        @media only screen and (min-width: 321px) and (max-width: 640px) {
+            html {
+                font-size: 16px !important
+            }
+        }
+
+        @media only screen and (min-width: 641px) and (max-width: 768px) {
+            html {
+                font-size: 20px !important
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 0;
+            opacity: 0;
+        }
+
+        body {
+            font-family: "microsoft yahei", arial, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+            color: #000;
+            background-color: white;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .navigation{
+            height:50px;
+            text-align: right;
+            background-color: #222222;
+        }
+        .navigation >ul > li{
+            width:150px;
+            height:50px;
+            display: inline-block;
+            text-align: center;
+            font-size: 20px;
+            padding-top: 10px;
+            vertical-align: top;
+            cursor: pointer;
+        }
+        .navigation >ul > li{
+            color: #9d9d9d;
+        }
+        .navigation >ul > li:hover{
+            color: white;
+            font-size: 22px;
+        }
+        .div-header{
+            height:400px;
+            background: #020031;
+            background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#020031),color-stop(100%,#6d3353));
+            background: -webkit-linear-gradient(45deg,#020031 0,#6d3353 100%);
+            background: linear-gradient(45deg,#020031 0,#6d3353 100%);
+        }
+        .header-container{
+            width:80%;
+            height:300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .header-title{
+            padding-top: 30px;
+            font-size: 150px;
+            color: white;
+            text-align: center;
+        }
+        .header-introduction{
+            margin-top: 10px;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+        }
+        .btn-enter{
+            margin: 10px 0.9375rem 0 0.625rem;
+            padding: 20px 20px;
+            line-height: 0;
+            vertical-align: middle;
+            font-family: "microsoft yahei", arial, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+            font-size: 0.875rem;
+            border:none;
+            background-color: #337AB7;
+            color: white;
+            border-radius: 5px;
+            -webkit-transition: all;
+            transition: all;
+            -webkit-transform: translateZ(0);
+            -webkit-transition-duration: 0.1s;
+            transition-duration: 0.1s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            box-shadow:0 0 0.1rem 0 #337AB7;
+            -webkit-box-shadow:0 0 0.1rem 0 #337AB7;
+            cursor: pointer;
+        }
+        .btn-enter:hover{
+            background-color: #428BBB;
+        }
+        .btn-enter:active{
+            background-color: #325B66;
+        }
+        .div-content{
+
+            border:1px solid red;
+        }
+        .recommend-title{
+            padding-top: 30px;
+            font-size: 40px;
+            text-align: center;
+        }
+        .list-item{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <header>
+        <div class="navigation">
+              <ul>
+                  <li>注册/登入</li>
+                  <li>博客文章</li>
+                  <li>API文档</li>
+                  <li>omui框架</li>
+                  <li>GitHub</li>
+                  <li>关于团队</li>
+              </ul>
+        </div>
+        <div class="div-header">
+            <div class="header-container">
+                <div class="header-title">OmTeam</div>
+                <div class="header-introduction">okii mobile web team</div>
+                <button class="btn-enter">进入OmTeam博客V1.0.0</button>
+            </div>
+        </div>
+    </header>
+    <article class="div-content">
+        <div class="recommend-title">OmTeam相关优质文章推荐</div>
+        <div class="article-container">
+            <div class="list-item">文章列表</div>
+            <div class="list-item">文章列表</div>
+            <div class="list-item">文章列表</div>
+            <div class="list-item">文章列表</div>
+            <div class="list-item">文章列表</div>
+        </div>
+    </article>
+</section>
+</body>
+</html>
